@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ar" dir="rtl"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;ذرى الأمجاد للمقاولات والتوريد&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Tailwind CSS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Arabic Font --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Custom Styles --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: 'Cairo', sans-serif; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Color variables */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--royal-purple: #7C3AED;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--desert-bronze: #92400E;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--jet-black: #0A0A0A;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Utility classes */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-royal-purple { background-color: var(--royal-purple); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-desert-bronze { background-color: var(--desert-bronze); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-jet-black { background-color: var(--jet-black); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.text-royal-purple { color: var(--royal-purple); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.text-desert-bronze { color: var(--desert-bronze); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>html { scroll-behavior: smooth; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Scrollbar styling */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar { width: 8px; height: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar-track { background: #f0f0f0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar-thumb { background: var(--desert-bronze); border-radius: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Animations */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeInUp { from { opacity:0; transform: translateY(20px); } to { opacity:1; transform: translateY(0); } }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; opacity:0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes slideIn { from { opacity:0; transform: translateX(50px); } to { opacity:1; transform: translateX(0); } }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.animate-slideIn { animation: slideIn 0.6s ease-out forwards; opacity:0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes zoomIn { from { opacity:0; transform: scale(0.8); } to { opacity:1; transform: scale(1); } }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.animate-zoomIn { animation: zoomIn 0.6s ease-out forwards; opacity:0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Floating buttons */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.whatsapp-float { position: fixed; bottom: 40px; left: 40px; width: 60px; height: 60px; background: #25d366; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:30px; z-index:50; box-shadow:2px 2px 3px rgba(0,0,0,0.25); transition:transform 0.3s; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.whatsapp-float:hover { transform: scale(1.1); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#backToTop { position: fixed; bottom: 40px; right: 40px; width: 50px; height: 50px; background: var(--royal-purple); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; z-index:50; display:none; box-shadow:2px 2px 3px rgba(0,0,0,0.25); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#backToTop:hover { background: #6525c5; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Navigation ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="sticky top-0 bg-white shadow z-40"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto flex items-center justify-between p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Logo --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg width="120" height="60" viewBox="0 0 300 150"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M20 120 L100 30 L180 120 Z" fill="#7C3AED" stroke="#7C3AED" stroke-width="8" stroke-linejoin="round"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M120 30 L200 120 L280 30 Z" fill="#7C3AED" stroke="#7C3AED" stroke-width="8" stroke-linejoin="round"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M150 40 Q170 80 150 120" fill="none" stroke="#92400E" stroke-width="12" stroke-linecap="round"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;circle cx="240" cy="60" r="12" fill="#7C3AED"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;text x="60" y="105" fill="#92400E" font-size="24" font-weight="bold"&gt;الأمجاد&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Desktop menu --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="hidden md:flex gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#home" class="hover:text-royal-purple"&gt;الرئيسية&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="hover:text-royal-purple"&gt;من نحن&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#services" class="hover:text-royal-purple"&gt;خدماتنا&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#tenders" class="hover:text-royal-purple"&gt;المناقصات الحكومية&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#gallery" class="hover:text-royal-purple"&gt;معرض المنتجات&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#team" class="hover:text-royal-purple"&gt;فريق العمل&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="hover:text-royal-purple"&gt;تواصل معنا&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- WhatsApp CTA --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="openWhatsApp()" class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"&gt;واتساب&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Mobile toggle --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="md:hidden" onclick="toggleMobileMenu()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="mobileMenu" class="hidden bg-white border-t p-4 md:hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#home" class="block py-2"&gt;الرئيسية&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#about" class="block py-2"&gt;من نحن&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#services" class="block py-2"&gt;خدماتنا&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#tenders" class="block py-2"&gt;المناقصات الحكومية&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#gallery" class="block py-2"&gt;معرض المنتجات&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#team" class="block py-2"&gt;فريق العمل&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="block py-2"&gt;تواصل معنا&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Hero Section ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="home" class="relative bg-jet-black min-h-screen flex items-center justify-center text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-desert-bronze opacity-80"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="relative z-10 space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-white text-4xl md:text-6xl font-bold animate-fadeInUp"&gt;بثباتٍ نرتقي، وبجودةٍ نُورد.&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-200 animate-fadeInUp" style="animation-delay:0.2s"&gt;ذرى الأمجاد للمقاولات والتوريد&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="scrollToSection('contact')" class="bg-desert-bronze text-black px-8 py-3 rounded-lg hover:bg-opacity-90 transition animate-fadeInUp" style="animation-delay:0.4s"&gt;تواصل معنا الآن&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Quick Info ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-12 bg-white text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-gray-700"&gt;ذرى الأمجاد للمقاولات والتوريد – خبرة معتمدة في تنفيذ مشاريع الإنشاء وتوفير المعدات غير الطبية للمستشفيات والمرافق الحكومية.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== About Us ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" class="py-20 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;من نحن&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Vision --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white p-6 rounded-lg shadow hover:shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-16 h-16 bg-royal-purple rounded-full flex items-center justify-center mx-auto mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="prevTestimonial()" class="absolute left-0 top-1/2 -translate-y-1/2 bg-desert-bronze text-black w-10 h-10 rounded-full flex items-center justify-center"&gt;◀&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="nextTestimonial()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-desert-bronze text-black w-10 h-10 rounded-full flex items-center justify-center"&gt;▶&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Stats Section ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="stats" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;أرقامنا&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;span class="text-5xl font-bold text-desert-bronze counter" data-target="10"&gt;0&lt;/span&gt;&lt;p class="mt-2"&gt;سنوات الخبرة&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;span class="text-5xl font-bold text-desert-bronze counter" data-target="200"&gt;0&lt;/span&gt;&lt;p class="mt-2"&gt;مشروع مكتمل&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;span class="text-5xl font-bold text-desert-bronze counter" data-target="50"&gt;0&lt;/span&gt;&lt;p class="mt-2"&gt;مورد معتمد&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;span class="text-5xl font-bold text-desert-bronze counter" data-target="100"&gt;0&lt;/span&gt;&lt;p class="mt-2"&gt;عميل سعيد&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== FAQ Section ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="faq" class="py-20 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;الأسئلة الشائعة&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-3xl mx-auto space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="border-b"&gt;&lt;button class="w-full flex justify-between items-center py-4 faq-toggle"&gt;&lt;span&gt;كيف يمكن التواصل معكم؟&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;/button&gt;&lt;div class="faq-content hidden pb-4"&gt;&lt;p class="text-gray-600"&gt;يمكن التواصل عبر نموذج الاتصال أو عن طريق الواتساب.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="border-b"&gt;&lt;button class="w-full flex justify-between items-center py-4 faq-toggle"&gt;&lt;span&gt;هل توفرون عروض أسعار سريعة؟&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;/button&gt;&lt;div class="faq-content hidden pb-4"&gt;&lt;p class="text-gray-600"&gt;نعم، نوفر عروض الأسعار خلال 24 ساعة.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="border-b"&gt;&lt;button class="w-full flex justify-between items-center py-4 faq-toggle"&gt;&lt;span&gt;ما هي مناطق التغطية؟&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;/button&gt;&lt;div class="faq-content hidden pb-4"&gt;&lt;p class="text-gray-600"&gt;نغطي جميع مناطق المملكة العربية السعودية.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="border-b"&gt;&lt;button class="w-full flex justify-between items-center py-4 faq-toggle"&gt;&lt;span&gt;هل يمكن طلب منتجات خاصة؟&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;/button&gt;&lt;div class="faq-content hidden pb-4"&gt;&lt;p class="text-gray-600"&gt;نعم، يمكننا تلبية جميع طلبات التوريد الخاصة وفقاً للاحتياجات.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="border-b"&gt;&lt;button class="w-full flex justify-between items-center py-4 faq-toggle"&gt;&lt;span&gt;كم يستغرق توصيل الطلب؟&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;/button&gt;&lt;div class="faq-content hidden pb-4"&gt;&lt;p class="text-gray-600"&gt;يعتمد ذلك على نوع الطلب والموقع، لكننا نسعى دائماً للتسليم السريع.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Partners ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="partners" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;شركاؤنا&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/120x60" alt="partner" class="mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Process Timeline ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="process" class="py-20 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;خطوات العمل&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-4xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ol class="relative border-s border-desert-bronze"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="mb-10 ms-4"&gt;&lt;div class="absolute w-3 h-3 bg-desert-bronze rounded-full -start-1.5 mt-1.5"&gt;&lt;/div&gt;&lt;h3 class="font-semibold"&gt;الاستشارة الأولية&lt;/h3&gt;&lt;p class="text-gray-600"&gt;نستمع لاحتياجات العميل ونحدد نطاق العمل.&lt;/p&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="mb-10 ms-4"&gt;&lt;div class="absolute w-3 h-3 bg-desert-bronze rounded-full -start-1.5 mt-1.5"&gt;&lt;/div&gt;&lt;h3 class="font-semibold"&gt;تقديم العرض&lt;/h3&gt;&lt;p class="text-gray-600"&gt;نعد عرضاً مفصلاً يشمل الأسعار والمدة.&lt;/p&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="mb-10 ms-4"&gt;&lt;div class="absolute w-3 h-3 bg-desert-bronze rounded-full -start-1.5 mt-1.5"&gt;&lt;/div&gt;&lt;h3 class="font-semibold"&gt;التنفيذ&lt;/h3&gt;&lt;p class="text-gray-600"&gt;فريقنا يبدأ التنفيذ وفق الجدول المتفق عليه.&lt;/p&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="ms-4"&gt;&lt;div class="absolute w-3 h-3 bg-desert-bronze rounded-full -start-1.5 mt-1.5"&gt;&lt;/div&gt;&lt;h3 class="font-semibold"&gt;التسليم والمتابعة&lt;/h3&gt;&lt;p class="text-gray-600"&gt;نسلم المشروع ونتابع لضمان رضى العميل.&lt;/p&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Blog Section ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="blog" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;أحدث المقالات&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;article class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg"&gt;&lt;h3 class="font-bold mb-2"&gt;عنوان مقال 1&lt;/h3&gt;&lt;p class="text-gray-600 mb-4"&gt;ملخص قصير للمقال يشرح أهم النقاط.&lt;/p&gt;&lt;a href="#" class="text-desert-bronze hover:underline"&gt;اقرأ المزيد&lt;/a&gt;&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;article class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg"&gt;&lt;h3 class="font-bold mb-2"&gt;عنوان مقال 2&lt;/h3&gt;&lt;p class="text-gray-600 mb-4"&gt;ملخص قصير للمقال يشرح أهم النقاط.&lt;/p&gt;&lt;a href="#" class="text-desert-bronze hover:underline"&gt;اقرأ المزيد&lt;/a&gt;&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;article class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg"&gt;&lt;h3 class="font-bold mb-2"&gt;عنوان مقال 3&lt;/h3&gt;&lt;p class="text-gray-600 mb-4"&gt;ملخص قصير للمقال يشرح أهم النقاط.&lt;/p&gt;&lt;a href="#" class="text-desert-bronze hover:underline"&gt;اقرأ المزيد&lt;/a&gt;&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Contact Section ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="py-20 bg-gray-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;تواصل معنا&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;form id="contactForm" class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;&lt;label class="block text-gray-700 mb-2"&gt;الاسم&lt;/label&gt;&lt;input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-royal-purple"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;&lt;label class="block text-gray-700 mb-2"&gt;رقم الجوال&lt;/label&gt;&lt;input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-royal-purple"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;&lt;label class="block text-gray-700 mb-2"&gt;الرسالة&lt;/label&gt;&lt;textarea id="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-royal-purple"&gt;&lt;/textarea&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button type="submit" class="w-full bg-desert-bronze text-black py-3 rounded-lg font-semibold hover:bg-opacity-90 transition"&gt;إرسال الرسالة&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-4 text-desert-bronze"&gt;معلومات التواصل&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;&lt;span class="text-royal-purple"&gt;📍&lt;/span&gt;&lt;div&gt;&lt;p class="font-semibold"&gt;الموقع&lt;/p&gt;&lt;p class="text-gray-600"&gt;المنطقة الشرقية – الخبر – الصناعية&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;&lt;span class="text-royal-purple"&gt;📧&lt;/span&gt;&lt;div&gt;&lt;p class="font-semibold"&gt;البريد الإلكتروني&lt;/p&gt;&lt;p class="text-gray-600"&gt;info@thuracontracting.sa&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;&lt;span class="text-royal-purple"&gt;📱&lt;/span&gt;&lt;div&gt;&lt;p class="font-semibold"&gt;الجوال&lt;/p&gt;&lt;p class="text-gray-600" dir="ltr"&gt;+966 5XXXXXXXX&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;&lt;span class="text-royal-purple"&gt;🕐&lt;/span&gt;&lt;div&gt;&lt;p class="font-semibold"&gt;ساعات العمل&lt;/p&gt;&lt;p class="text-gray-600"&gt;السبت إلى الخميس – 9 صباحًا إلى 6 مساءً&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;&lt;button onclick="downloadProfile()" class="bg-royal-purple text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition inline-flex items-center gap-2"&gt;&lt;span&gt;📄&lt;/span&gt;تحميل الملف التعريفي PDF&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Newsletter ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-20 bg-desert-bronze text-black text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-2xl md:text-3xl font-bold mb-6"&gt;اشترك في النشرة البريدية&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;form id="newsletterForm" class="max-w-xl mx-auto flex flex-col md:flex-row gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="email" required placeholder="أدخل بريدك الإلكتروني" class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-royal-purple"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="submit" class="bg-royal-purple text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition"&gt;اشترك&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Footer ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-jet-black text-white py-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mb-6 md:mb-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg width="100" height="50" viewBox="0 0 300 150"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path d="M20 120 L100 30 L180 120 Z" fill="#7C3AED" stroke="#7C3AED" stroke-width="8" stroke-linejoin="round"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path d="M120 30 L200 120 L280 30 Z" fill="#7C3AED" stroke="#7C3AED" stroke-width="8" stroke-linejoin="round"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path d="M150 40 Q170 80 150 120" fill="none" stroke="#92400E" stroke-width="12" stroke-linecap="round"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;circle cx="240" cy="60" r="12" fill="#7C3AED"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;text x="60" y="105" fill="#92400E" font-size="24" font-weight="bold"&gt;الأمجاد&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;nav class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#home" class="hover:text-desert-bronze"&gt;الرئيسية&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#about" class="hover:text-desert-bronze"&gt;من نحن&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#services" class="hover:text-desert-bronze"&gt;خدماتنا&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#gallery" class="hover:text-desert-bronze"&gt;المنتجات&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#team" class="hover:text-desert-bronze"&gt;الفريق&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#blog" class="hover:text-desert-bronze"&gt;المقالات&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#contact" class="hover:text-desert-bronze"&gt;تواصل معنا&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="openWhatsApp()" class="bg-green-500 px-6 py-3 rounded-lg text-black font-semibold hover:bg-green-600"&gt;تواصل عبر واتساب&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mt-8 pt-8 border-t border-gray-700"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-400"&gt;© 2024 ذرى الأمجاد للمقاولات والتوريد. جميع الحقوق محفوظة.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Floating Buttons ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="https://wa.me/966500000000" target="_blank" class="whatsapp-float" aria-label="WhatsApp"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"&gt;&lt;path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="backToTop" onclick="scrollToTop()"&gt;▲&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== JavaScript ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Toggle mobile menu</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function toggleMobileMenu() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const menu = document.getElementById('mobileMenu');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>menu.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Smooth scroll to section</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function scrollToSection(id) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById(id).scrollIntoView({ behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Scroll to top</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function scrollToTop() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.scrollTo({ top: 0, behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Show back to top button on scroll</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.addEventListener('scroll', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const btn = document.getElementById('backToTop');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (window.scrollY &gt; 500) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.style.display = 'flex';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Contact form submission</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('contactForm').addEventListener('submit', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert('شكراً لتواصلك معنا! سنقوم بالرد عليك في أقرب وقت ممكن.');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>this.reset();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Newsletter form</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('newsletterForm').addEventListener('submit', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert('تم الاشتراك في النشرة البريدية.');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>this.reset();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Download company profile</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function downloadProfile() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert('سيبدأ تحميل الملف التعريفي...');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.open('#', '_blank');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Open WhatsApp chat</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function openWhatsApp() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.open('https://wa.me/966500000000', '_blank');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Animate sections on scroll</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const observer = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (entry.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>entry.target.classList.add('animate-fadeInUp');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>observer.unobserve(entry.target);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, { threshold: 0.1 });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('section').forEach(sec =&gt; observer.observe(sec));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Testimonials slider logic</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentTestimonial = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const slides = document.querySelectorAll('#testimonialSlides .testimonial-slide');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showTestimonial(index) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>slides.forEach((s, i) =&gt; { s.classList.toggle('hidden', i !== index); });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function nextTestimonial() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentTestimonial = (currentTestimonial + 1) % slides.length;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>showTestimonial(currentTestimonial);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function prevTestimonial() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentTestimonial = (currentTestimonial - 1 + slides.length) % slides.length;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>showTestimonial(currentTestimonial);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setInterval(nextTestimonial, 5000);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// FAQ accordion behavior</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('.faq-toggle').forEach(btn =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>btn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const content = btn.nextElementSibling;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>content.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Number counters</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const counterObserver = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (entry.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const el = entry.target;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const target = parseInt(el.getAttribute('data-target'));</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let count = 0;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const step = Math.ceil(target / 50);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const interval = setInterval(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>count += step;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (count &gt;= target) { count = target; clearInterval(interval); }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>el.textContent = count;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}, 50);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>counterObserver.unobserve(el);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, { threshold: 0.5 });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('.counter').forEach(el =&gt; counterObserver.observe(el));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;<span class="Apple-converted-space">    </span>&lt;h3 class="text-xl font-bold text-center mb-2"&gt;الرؤية&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-center text-gray-600"&gt;أن نكون الخيار الأول في السوق السعودي لتوريد أدوات البناء والمعدات غير الطبية&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Mission --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white p-6 rounded-lg shadow hover:shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-16 h-16 bg-desert-bronze rounded-full flex items-center justify-center mx-auto mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold text-center mb-2"&gt;الرسالة&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-center text-gray-600"&gt;نعمل بخطى واثقة لتقديم خدمات موثوقة، سريعة، وملتزمة بمعايير الجودة والمناقصات الحكومية&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Values --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white p-6 rounded-lg shadow hover:shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-16 h-16 bg-royal-purple rounded-full flex items-center justify-center mx-auto mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold text-center mb-2"&gt;القيم&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-center text-gray-600"&gt;الشفافية – الالتزام – الجودة – الاستجابة السريعة&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Services ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="services" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;خدماتنا&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-5xl mb-4 text-center group-hover:scale-110 transition"&gt;🏗️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold mb-3 text-center text-desert-bronze"&gt;مشاريع المقاولات الخفيفة&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 text-center"&gt;أعمال التشطيب والصيانة والأعمال الكهربائية والسباكة الخفيفة&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-5xl mb-4 text-center group-hover:scale-110 transition"&gt;🔧&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold mb-3 text-center text-desert-bronze"&gt;توريدات البناء&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 text-center"&gt;المسامير والبراغي والأدوات الأساسية والحديد الخفيف والأدوات اليدوية ومعدات السلامة&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-5xl mb-4 text-center group-hover:scale-110 transition"&gt;🏥&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold mb-3 text-center text-desert-bronze"&gt;توريد المعدات غير الطبية للمستشفيات&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 text-center"&gt;صناديق النفايات والعربات والكراسي ورفوف التخزين وأدوات التنظيف&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Government Tenders ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="tenders" class="py-20 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;المناقصات الحكومية&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-4xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white p-8 rounded-lg shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-2 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold mb-4 text-desert-bronze"&gt;خبرتنا في المناقصات&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-start gap-2"&gt;&lt;span class="text-royal-purple"&gt;✓&lt;/span&gt;&lt;span&gt;خبرة واسعة في تقديم العروض والفوز بالمناقصات الحكومية&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-start gap-2"&gt;&lt;span class="text-royal-purple"&gt;✓&lt;/span&gt;&lt;span&gt;مسجلون في منصة اعتماد الحكومية&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-start gap-2"&gt;&lt;span class="text-royal-purple"&gt;✓&lt;/span&gt;&lt;span&gt;توفير جميع المستندات المطلوبة عند الطلب&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold mb-4 text-desert-bronze"&gt;المستندات المتوفرة&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-start gap-2"&gt;&lt;span class="text-royal-purple"&gt;📄&lt;/span&gt;&lt;span&gt;شهادة الزكاة والدخل&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-start gap-2"&gt;&lt;span class="text-royal-purple"&gt;📄&lt;/span&gt;&lt;span&gt;السجل التجاري&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-start gap-2"&gt;&lt;span class="text-royal-purple"&gt;📄&lt;/span&gt;&lt;span&gt;الخطاب البنكي&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-start gap-2"&gt;&lt;span class="text-royal-purple"&gt;📄&lt;/span&gt;&lt;span&gt;جميع المستندات القانونية المطلوبة&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Products Gallery ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="gallery" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;معرض المنتجات&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8" id="productGrid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Product items --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🪑&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;كرسي انتظار ثلاثي&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🛒&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;عربة نظافة 3 رفوف&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🗑️&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;صندوق نفايات طبي 50 لتر&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🔩&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;مسمار 5 سم – حديد مجلفن&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🔨&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;أدوات يدوية متنوعة&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🦺&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;معدات السلامة&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🏗️&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;حديد خفيف للبناء&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🧹&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;أدوات تنظيف احترافية&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🛠️&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;مجموعة صيانة متكاملة&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🧯&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;طفايات حريق&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;⚙️&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;مفاتيح ومعدات ميكانيكية&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🪚&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;منشار كهربائي&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;⛑️&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;خوذ السلامة&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🪠&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;معدات السباكة&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition"&gt;&lt;div class="h-40 bg-gray-300 flex items-center justify-center"&gt;&lt;span class="text-4xl"&gt;🧵&lt;/span&gt;&lt;/div&gt;&lt;div class="p-4"&gt;&lt;h4 class="text-sm font-semibold text-center"&gt;لفائف حبال متينة&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-center text-gray-600"&gt;للحصول على كتالوج مفصل، يرجى التواصل معنا.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Trust Elements ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-16 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-center"&gt;&lt;div class="text-4xl mb-2"&gt;✅&lt;/div&gt;&lt;p class="font-semibold"&gt;مسجل في منصة اعتماد&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-center"&gt;&lt;div class="text-4xl mb-2"&gt;✅&lt;/div&gt;&lt;p class="font-semibold"&gt;سجل تجاري ساري&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-center"&gt;&lt;div class="text-4xl mb-2"&gt;✅&lt;/div&gt;&lt;p class="font-semibold"&gt;تجهيز عروض أسعار خلال 24 ساعة&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Team Section ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="team" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;فريق العمل&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;محمد&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;المدير التنفيذي&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;أحمد&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;مدير المشتريات&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;سارة&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;العلاقات العامة&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;ليلى&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;مدير المشاريع&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;عبدالله&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;فني صيانة&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;ريم&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;خدمة العملاء&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;ناصر&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;الإدارة المالية&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;&lt;img src="https://via.placeholder.com/150" alt="Member" class="w-32 h-32 rounded-full mx-auto mb-4"&gt;&lt;h3 class="font-bold"&gt;جمانة&lt;/h3&gt;&lt;p class="text-sm text-gray-600"&gt;مسؤولة التسويق&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ===================== Testimonials ===================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="testimonials" class="py-20 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-royal-purple text-3xl md:text-4xl font-bold text-center mb-12"&gt;آراء العملاء&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="relative max-w-3xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="testimonialSlides" class="overflow-hidden relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="testimonial-slide p-8 bg-white rounded-lg shadow text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-4"&gt;"خدمة متميزة وسرعة في الاستجابة"&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-semibold"&gt;عميل 1&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="testimonial-slide p-8 bg-white rounded-lg shadow text-center hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-4"&gt;"أفضل شركة تعاملت معها في مجال التوريد"&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-semibold"&gt;عميل 2&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="testimonial-slide p-8 bg-white rounded-lg shadow text-center hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-4"&gt;"احترافية عالية وجودة في التنفيذ"&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-semibold"&gt;عميل 3&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="testimonial-slide p-8 bg-white rounded-lg shadow text-center hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-4"&gt;"التزام بالمواعيد وخدمات مميزة"&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-semibold"&gt;عميل 4&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="testimonial-slide p-8 bg-white rounded-lg shadow text-center hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-4"&gt;"فريق عمل متعاون ومتفهم"&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-semibold"&gt;عميل 5&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+</body>
+</html>
